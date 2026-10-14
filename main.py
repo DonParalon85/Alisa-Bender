@@ -5,11 +5,11 @@ from gradio_client import Client
 app = FastAPI()
 
 # Подключаемся к бесплатному генератору на Hugging Face (XTTS-v2)
-HF_SPACE_URL = "hasanbasbunar/Voice-Cloning-XTTS-v2"
+HF_SPACE_URL = "JymNils/Voice-Cloning-XTTS-v2"
 hf_client = Client(HF_SPACE_URL)
 
 # ВСТАВЬ СЮДА СВОЮ ССЫЛКУ ИЗ ПУНКТА 2
-BENDER_VOICE_SAMPLE_URL = "https://githubusercontent.com"
+BENDER_VOICE_SAMPLE_URL = "https://raw.githubusercontent.com/bender_futurama.mp3"
 
 @app.post("/webhook/alisa")
 async def alisa_webhook(request: Request):
